@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#menu a").click(function(e){
+                e.preventDefault();
+                var url = $(this).attr("href");
+                $("#content").load(url);
+            });
+        });
+    </script>
+    <style>
+        #menu {
+            float: left;
+            width: 20%;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        #content {
+            float: left;
+            width: 80%;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="menu">
+    <h2>Menu</h2>
+    <ul>
+        <li><a href="page1.html">Page 1</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <!-- Add more menu items with respective page URLs -->
+    </ul>
+</div>
+
+<div id="content">
+    <!-- Content from page1.html or page2.html will be loaded here -->
+</div>
+
+</body>
+</html>

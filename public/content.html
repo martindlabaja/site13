@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomer / Biologist Portfolio</title>
+    
+    <style>
+        /* Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Font loading */
+        @font-face {
+            font-family: 'iA Writer Mono';
+            src: url('font/iAWriterMonoS-Regular.woff2') format('woff2'), /* Regular */
+                 url('font/iAWriterMonoS-Bold.woff2') format('woff2'), /* Bold */
+                 url('font/iAWriterMonoS-Italic.woff2') format('woff2'), /* Italic */
+                 url('font/iAWriterMonoS-BoldItalic.woff2') format('woff2'); /* Bold Italic */
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Body styles */
+        body {
+            background-color: #06090f;
+            font-family: 'iA Writer Mono', monospace; /* Use iA Writer Mono font */
+            color: #c8cacc;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Main container */
+        .container {
+            display: flex;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header and menu styles */
+        .sidebar {
+            flex: 0 0 200px; /* Fixed width for sidebar */
+        }
+
+        /* Header styles */
+        .header {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        /* Logo styles */
+        .logo {
+            text-align: left; 
+            font-size: 24px;
+            font-weight: bold;
+            color: #c8cacc;
+            text-decoration: none;
+        }        
+
+        /* Menu styles */
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu ul li {
+            margin-bottom: 0px; /* Separate menu items */
+            transition: transform 0.3s ease;
+        }
+
+        .menu a {
+            color: #3fb0ac; /* Adjusted menu item color */
+            text-decoration: none;
+            padding-left: 1em; /* Increased padding */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: block; /* Make menu items block level */
+        }
+
+        .menu ul li a:hover {
+            background-color: #1c2733;
+            transform: scale(1.05); /* Slightly increased scale on hover */
+        }
+
+        /* Headings */
+        h1,h2,h3,h4,ul,p {
+            margin-top: 1em;
+            margin-bottom: 1em;        
+        }        
+
+        /* Content styles */
+        .content {
+            flex: 1; /* Take remaining space */
+            background-color: #141b29;
+            padding: 0em 2em 0em 2em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content a {
+            color: #3fb0ac;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .content a:hover {
+            color: #71c9c5;
+        }
+
+        /* Adjust margin and remove bullet points for lists */
+        .content ul,
+        .content ol {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 20px;
+        }
+
+        /* Footer styles */
+        .footer {
+            text-align: center;                       
+            color: #c8cacc;            
+            border-top: 1px solid #303f58;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">
+                <a href="#" class="logo">Martin</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <div class="accordion"><details open class="accordion-item">
+                            <summary class="accordion-header">
+                                art
+                            </summary>
+                            <div class="accordion-body">
+                                <div class="accordion"><div class="accordion-item">
+                            <a href="navrhy.html" class="accordion-link">navrhy</a>
+                        </div><div class="accordion-item">
+                            <a href="trenink.html" class="accordion-link">trenink</a>
+                        </div><div class="accordion-item">
+                            <a href="vybaveni.html" class="accordion-link">vybaveni</a>
+                        </div></div>
+                            </div>
+                        </details><details open class="accordion-item">
+                            <summary class="accordion-header">
+                                biology
+                            </summary>
+                            <div class="accordion-body">
+                                <div class="accordion"><div class="accordion-item">
+                            <a href="241.html" class="accordion-link">241</a>
+                        </div><div class="accordion-item">
+                            <a href="c++.html" class="accordion-link">c++</a>
+                        </div><div class="accordion-item">
+                            <a href="electrophoresis.html" class="accordion-link">electrophoresis</a>
+                        </div><div class="accordion-item">
+                            <a href="fumehood.html" class="accordion-link">fumehood</a>
+                        </div><div class="accordion-item">
+                            <a href="ideas.html" class="accordion-link">ideas</a>
+                        </div></div>
+                            </div>
+                        </details><details open class="accordion-item">
+                            <summary class="accordion-header">
+                                engineering
+                            </summary>
+                            <div class="accordion-body">
+                                <div class="accordion"><div class="accordion-item">
+                            <a href="primers.html" class="accordion-link">primers</a>
+                        </div><div class="accordion-item">
+                            <a href="tobuy.html" class="accordion-link">tobuy</a>
+                        </div></div>
+                            </div>
+                        </details></div>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <p><a href="https://acsdchas.files.wordpress.com/2015/03/fume-hood-design-workshop-report1.pdf">https://acsdchas.files.wordpress.com/2015/03/fume-hood-design-workshop-report1.pdf</a></p>
+<p><a href="https://www.labconco.com/articles/infographic-how-to-select-the-right-blower">fume hood exhaust blower guide</a></p>
+<p>/ centrifugal fan</p>
+<ol>
+<li>ventilatory primotopu (jsou sparkless)</li>
+<li>lodni vent <a href="https://www.marinesport.cz/p/3132/ventilator-rule-in-line-v-prumeru-75-a-100-mm-na-12-v?pp=84117275">lodni cz</a></li>
+<li>leaf blowers</li>
+</ol>
+<p>3 FANS 90 W 12V 3 A</p>
+<p><a href="https://www.alza.cz/solight-led-napajeci-zdroj-230v-12v-10a-120w-ip20-d6859921.htm">https://www.alza.cz/solight-led-napajeci-zdroj-230v-12v-10a-120w-ip20-d6859921.htm</a></p>
+   
+
+        <div class="footer">
+            <p>&copy; 2024 Martin</p>
+        </div>
+
+        </div> 
+    </div>
+    
+</body>
+</html>
