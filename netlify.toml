@@ -1,9 +1,9 @@
 [build]
 base = "."
-command = "node generator.js"  # Adjust the build command as needed
+command = "node server.js"  # Adjust the build command as needed
 publish = "."  # Assuming your built files are outputted to a "dist" directory
 [[redirects]]
 from = "/"
-to = "ideas.html"
+to = "public/index.html"
 status = 200
 
